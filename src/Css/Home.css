@@ -1,0 +1,471 @@
+* {
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+ .Home{
+    display:flex;
+     overflow: hidden;
+    /* background-color: rgba(23, 84, 129, 0.7); */
+     width:100%;
+     height:100%;
+     padding-left:250px;
+       /* border:5px solid rgb(196, 28, 28); */
+} 
+.Home-content{
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    /* padding-left:-270px; */
+    /* border:5px solid black; */
+
+}
+.top{
+    display:flex;
+    margin-top:56px;
+    height:70px;
+    width:100%;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom:-20px;
+   
+    /* border:1px solid black; */
+    
+}
+.top h1{
+    margin-left:60px ;
+    font-size:28px;
+    font-weight: 380;
+    color: #fff;
+    margin-left: 37px;
+}
+.top-btn{
+   margin-right:40px;
+   width:250px;
+   border-radius: 20px 20px 20px;
+   height:60px;
+   background-color:#033254;
+   color:#fff;
+   font-size:21px;
+   outline:none;
+   border:none;
+   
+}
+
+    
+
+
+.Middle{
+margin-top:40px;
+  width:1300px;
+  height:500px;
+  /* border:1px solid black; */
+
+display: flex;
+flex-direction: column;
+}
+.Mid-title p{
+  font-size: 22.5px;
+
+line-height: 32px;
+color:#ffffff;
+}
+.mid-Card{
+  width:395px;
+  display: flex;
+  flex-direction: column;
+   /* align-items: flex-end; */
+   
+  padding-left:5px;
+  height:466px;
+  /* border:3px solid red; */
+  margin-top:10px;
+}
+
+
+.mid-Card-img{
+  width:380px;
+  height:275px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* border:1px solid black; */
+      overflow: hidden;
+        border-radius:12px 12px 12px;
+
+}
+.mid-Card-img img{
+  width:380px;
+  height:272px;
+  border-radius:12px 12px 12px;
+    transition: transform 0.2s linear;
+}
+
+.mid-Card:hover .mid-Card-img img{
+     transform: scale(1.1);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+
+}
+.mid-Card-text{
+  /* border:1px solid black; */
+  margin-left:10px;
+    margin-top:8px;
+  
+}
+.mid-Card-text h6{
+  color:#ffffff;
+  font-size: 16px;
+}
+.mid-Card-text p{
+  color:#ffffff;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+
+.mid-Container {
+  position: relative; /* To make the container a reference point for absolute positioning */
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin-top:-40px;
+  margin-right:110px;
+}
+
+.prev-btn{
+  display: flex;
+   background-color:#152F4A;
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  border: none;
+  color:#ffffff;
+  margin-right:160px;
+ 
+  align-items: center;
+  justify-content: center;
+}
+.next-btn{
+  display: flex;
+   background-color:#152F4A;
+    width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  border: none;
+  color:#ffffff;
+  font-size:small;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 10px; */
+
+}
+
+
+.Box-title{
+     display:flex;
+     justify-content: flex-start;
+     
+    margin-left:40px !important;
+    /* margin-top: 35px; */
+    flex-direction:row;
+    align-items: center;
+    /* border:1px solid black; */
+    align-items: end;
+    color:#fff;
+    font-size:21px;
+    height:80px;
+    width:600px;
+    
+    margin-right: 530px;
+    margin-bottom:-80px;
+    /* padding-top:20px !important; */
+    /* padding-left:10px; */
+    
+}
+
+@media (max-width:768px){
+  .Home {
+     display:flex;
+     overflow: hidden;
+    background-color:#175481;
+     width:100vh;
+     height:100%;
+     padding-top: 60px;
+     padding-left:0px !important;
+
+      /* border:5px solid rgb(196, 28, 28); */
+  }
+
+  .Home-content{
+    /* border:5px solid rgb(255, 255, 255); */
+    /* margin-left: -250px  !important;  */
+    width:100vh;
+
+  }
+.top{
+  display: flex;
+  /* border:1px solid black; */
+  width:345px;
+  justify-content: space-between !important;
+}
+.top h1{
+  font-size:24px;
+   /* border:1px solid rgb(174, 0, 0); */
+   margin-left:4px;
+    width:120px;
+
+
+}
+.top-btn{
+  margin-right: 3px;
+    /* border:1px solid black; */
+    width:120px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius:35px 35px 35px ;
+
+}
+
+.Middle{
+    width:100%;
+  height:500px;
+  /* border:10px solid rgb(24, 204, 69); */
+
+}
+.mid-Container{
+  
+  display: flex;
+  /* justify-content:st; */
+  /* align-items: center; */
+  flex-direction: column;
+  width:100%;
+  height:410px;
+  justify-content: space-evenly;
+  /* margin-left: -40px;0 */
+   position: relative;
+   /* border:10px solid rgb(203, 30, 30); */
+   margin-top:10px;
+   margin-bottom:10px;
+
+}
+.mid-Card{
+     display: flex;
+  justify-content: center;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  height: 400px;
+  width: 300px;
+  /* margin-left:200px; */
+  overflow: hidden;
+  /* margin-right:-100px; */
+ /* margin-top:90px !important; */
+ /* border:5px solid black; */
+ 
+
+}
+.rec-item-wrapper{
+  width:600px
+}
+
+.sc-gEvEer.eyoHU.rec.rec-item-wrapper {
+  width: 380px !important;
+  margin-left:-20px !important; /* Set your desired default width */
+}
+#0.sc-gEvEer.eyoHU.rec.rec-item-wrapper {
+  width: 300px !important;  /* Set your desired width */
+}
+.mid-Card-img{
+  width:291px;
+}
+.Mid-btn{
+  width:100%;
+  justify-content:space-around;
+  /* border:1px  solid red; */
+  margin-top: 40px;
+  margin-bottom:-30px;
+}
+.mid-prev-btn{
+  margin-right:-120px;
+  /* margin-left:180px; */
+}
+.Mid-title p{
+  margin-left: -50px;
+  font-size: 19.5px !important;
+  font-weight:100 !important;
+}
+.mid-next-btn{
+  margin-right:-90px;
+}
+.mid-Card-text h6{
+   font-size:19px !important;
+}
+.mid-Card-text p{
+  font-size: 14px;
+}
+}
+
+#audioController{
+  display: flex;
+  position: bottom ;
+   width:100% !important;
+height:120px !important;
+/* margin-left: 254px; */
+position: fixed;
+background-color:#002152 ; 
+  bottom: 0;
+  left:4;
+  right: 0;
+  /* Background color for the controller */
+  padding: 10px; /* Add some padding for styling */
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for the controller */
+  z-index: 999; /* Ensure it's above other content */
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+
+
+}
+
+.rhap_container {
+  background-color:#002152 ; 
+ 
+
+}
+ .audio-player-container {
+
+  background-color:#002152 ; 
+  width:100% !important;
+  /* Replace 'your-color' with your desired background color */
+}
+.rhap_container {
+  background-color: #002152 !important;
+  margin-right:280px !important;
+  margin-left:200px;
+ 
+
+}
+.rhap_time{
+  color: #dddddd !important; /* Change to your desired color */
+}
+
+.rhap_controls-section {
+  margin-bottom: 15px;
+}
+
+.rhap_progress-section {
+  height: 20px;
+  padding-bottom:-40px;
+  width:490px;
+  color: #ffffff;
+  /* margin-left:550px; */
+  /* border:3px solid white; */
+  
+  
+}
+
+.rhap_main-controls-button {
+  width: 50px !important;
+  height: 80px !important;
+}
+
+.rhap_main-controls-button {
+  width: 56px;
+  height: 56px;
+  display: block;
+ 
+
+}
+
+.rhap_main-controls-button svg {
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+.rhap_progress-filled,
+.rhap_progress-indicator {
+  background-color: #ffffff !important;
+  color:#fff;
+    
+  
+}
+
+.rhap_button-clear.rhap_volume-button {
+  color: #ffffff !important;
+}
+
+.rhap_volume-bar, .rhap_volume-indicator {
+  background-color: red;
+}
+
+/* .audio-Player{
+width:800px !important;
+ background-color:#002152 !important ;
+ border:10px solid white;
+} */
+
+
+.progress-number {
+  color:#ffffff !important;
+  
+}
+.MusicCard{
+  display: flex;
+ /* border:3px solid white; */
+ height:100px;
+ width:500px;
+
+   margin-left:-110px;
+   color:white;
+   /* padding-left:-200px; */
+  align-items: center;
+   
+   /* margin-right:px;; */
+
+}
+.MusicCard img{
+
+  width:85px !important;
+  height:80px;
+  border-radius: 45px 45px 45px !important;
+  /* margin-right:650px;
+  margin-left:-100px; */
+  
+}
+.M-C-title{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  margin-left:15px;
+  /* margin-bottom:-1px; */
+   /* border:3px solid white; */
+   height:60px;
+  
+}
+#title{
+  margin-top: 10px;
+  margin-bottom:2px;
+  font-size: 17px;
+  font-weight: 600px;
+}
+.rhap_download-progress{
+ height:4px !important;
+}

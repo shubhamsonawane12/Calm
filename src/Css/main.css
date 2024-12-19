@@ -1,0 +1,13 @@
+.background-Transition{
+  display: flex;
+  /* background-image: url('../images/JasperLake.jpg'); */
+  /* background-size: cover; */
+  /* position: fixed; */
+  /* Other background-related styles */
+   /* background-repeat: no-repeat; */
+    width:100%;
+   height:100%; 
+   background-color:  rgba(23, 84, 129, 0.7);
+   /* border:10px solid red; */
+}
+

@@ -1,0 +1,304 @@
+a{
+  text-decoration: none;
+ 
+
+}
+
+
+.SidebarWrapper {
+  display: flex;
+  height: 100vh;
+   /* padding-left:20px; */
+   width:250px;
+   flex-direction: column;
+  background-color: rgba(18, 79, 122, 0.9);
+   position: fixed; /* Keep the sidebar fixed */
+   top: 0; /* Position at the top of the viewport */
+   left: 0; /* Position at the left of the viewport */
+ bottom: 0; /* Extend to the bottom of the viewport */
+ width: 250px; /* Set the width of the sidebar */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the viewport height */
+   border-right: 1px solid #ccc; /* Optional: Add a border to the right side */
+   box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+   /* border:2px solid rgb(189, 24, 24);  */
+}
+.Sidebar a {
+  text-decoration: none;
+  display: flex;
+  height:100vh;
+  align-items: center; /* Vertically center the icon and text */
+  padding: 10px; /* Adjust padding as needed */
+  /* border:1px solid black; */
+ 
+}
+
+.Sidebar{
+  margin-left:15px;
+  margin-top:26px;
+  /* margin-bottom:-20px; */
+  width:270px;
+  justify-content: space-around;
+  /* border: solid ; */
+  display:flex;
+  flex-direction: column;
+   /* border:1px solid black; */
+  
+}
+.Sidebar svg{
+ color: rgb(249, 251, 250);
+  height: 30px;
+  width: 30px;
+  margin-bottom: 5px; 
+  
+}
+.Sidebar .circle {
+  width: 45px; /* Adjust the circle size as needed */
+  height: 45px; /* Adjust the circle size as needed */
+  border: 1.6px solid rgb(245, 139, 245);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right:15px;
+  margin-bottom: 5px; /* Add spacing between circle and text */
+}
+
+
+.Sidebar a:hover::before  {
+  background-color: rgba(245, 139, 245, 0.2);
+  font-weight:900px;
+   /* Adjust the hover background color */
+}
+.nav-link{
+   color:rgb(255, 255, 255);
+   font-size:18px;
+   font-weight:380;
+   
+}
+
+
+
+.offcanvas {
+  background-color:rgb(7, 102, 169) !important; ;
+}
+
+.Responsive-circle{
+   width: 45px; /* Adjust the circle size as needed */
+  height: 45px; /* Adjust the circle size as needed */
+  border: 1.6px solid rgb(245, 139, 245);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right:15px;
+  margin-bottom: 5px; 
+  
+
+}
+.Resp-sidebar{
+  margin-top:-12px;
+  margin-bottom:30px;
+  display:flex;
+  flex-direction:row;
+  width:270px;
+  align-items: center;
+  
+   /* border: solid ;  */
+ 
+
+}
+.Responsive-circle:hover {
+  background-color: rgb(62, 223, 170);
+}
+.circle:hover{
+  background-color: rgb(93, 240, 191);
+
+}
+
+#hover-color:hover .circle{
+  background-color: rgb(93, 240, 191);
+ 
+
+
+}
+
+
+  .brand-Name{
+   
+font-family: 'Dancing Script', cursive;
+font-size:50px;
+font-stretch:expanded;
+   font-weight:20;
+   color: rgb(231, 231, 231);
+   margin-left:24px;
+   margin-top:10px;
+}
+
+@media (min-width: 767px) {
+  .brand-Name3{
+   
+font-family: 'Dancing Script', cursive;
+font-size:50px;
+font-stretch:expanded;
+   font-weight:20;
+   color: rgb(231, 231, 231);
+   margin-left:24px;
+   margin-top:10px;
+}
+}
+
+
+
+.navbar-toggler{
+  color: white !important;
+  background-color: #efefef;
+  border:none;
+  outline:none;
+}
+.brand-Name3 span{
+  font-weight:20;
+  
+}
+/* Sidebar.css */
+.Sidebar {
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  max-height: calc(100vh - 170px);
+  overflow-y: auto;
+}
+
+/* Style the scrollbar */
+.Sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.Sidebar::-webkit-scrollbar-track {
+  background-color: #efefef;
+}
+
+.Sidebar::-webkit-scrollbar-thumb {
+  background-color: rgb(7, 102, 169);
+  border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+}
+
+.Sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #4e6cc8; /* Change color on hover */
+}
+
+.Sidebar::-webkit-scrollbar-thumb:active {
+  background-color: #333; /* Change color when clicked */
+}
+
+
+
+
+
+
+
+
+.brand{
+  border:1px solid black;
+  /* margin: left -500px !important; */
+}
+
+
+
+.brand-Name3{
+  padding-left:12px;
+  text-decoration: none;
+}
+.brand-Name:hover{
+   text-decoration: none;
+}
+
+@media (max-width:768px){
+.SidebarWrapper{
+     display: none;
+    visibility:inherit;
+
+}
+
+}
+
+@media (min-width: 768px) {
+  .Responsive-sidebar {
+    display: none;
+    visibility:inherit;
+    /* height:50px; */
+  }
+     .brand-Name3{
+
+   display: none;
+  }
+    
+
+  }
+
+@media (min-width: 767px){
+  
+
+}
+
+@media (max-width: 767px) {
+  .SidebarWrapper {
+    display: none;
+  }
+ 
+}
+
+
+@media (max-width: 767px) {
+  .brand-Name{
+   
+font-family: 'Dancing Script', cursive;
+font-size:27px;
+  font-stretch:expanded;
+   font-weight:20;
+   color: rgb(231, 231, 231);
+   
+   
+   
+}
+ .brand-Name1{
+   
+  font-family: 'Dancing Script', cursive;
+   font-size:28px;
+  font-stretch:expanded;
+   font-weight:20;
+   color: rgb(231, 231, 231);  
+   /* padding-left:20px; */
+}
+.close-btn{
+  color:white;
+}
+.nav-backcolor{
+    background-color:#002D72;
+
+}
+
+.container-fluid{
+  width:100%;
+  /* border:1px solid black; */
+  /* margin-right:-250px; */
+}
+.brand-Name{
+  /* border:1px solid black; */
+margin-left:-10px;
+margin-right:20px;
+width:76%
+
+}
+
+
+.brand-Name3{
+  font-family: 'Dancing Script', cursive;
+font-size:32px;
+font-stretch:expanded;
+   font-weight:20;
+   color: rgb(231, 231, 231);
+   margin-right:220px;
+   /* margin-left:-10px; */
+   /* margin-top:10px; */
+
+}
+
+}
